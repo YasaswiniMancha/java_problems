@@ -4,6 +4,7 @@ public class SumOfArrayElements {
 
     // Method to calculate the running sum of an array
     public int[] runningSum(int[] nums) {
+    	
         int[] results = new int[nums.length];
         
         for (int i = 0; i < nums.length; i++) {
@@ -24,5 +25,26 @@ public class SumOfArrayElements {
         
         return results;
     }
+    
+    
+    
+
+    public int[] runningSumWithOverrideMethod(int[] nums) {
+        
+        for (int i = 0; i < nums.length; i++) {
+            if (i != 0) {
+                nums[i] = nums[i - 1] + nums[i];
+            }
+        }
+        
+        System.out.println("nums array using OverrideMethod for sum up: ");
+        for (int num : nums) {
+            System.out.print(num + " "); // Print each number in the array
+        }
+        System.out.println();
+        
+        return nums;
+    }
+
 
 }

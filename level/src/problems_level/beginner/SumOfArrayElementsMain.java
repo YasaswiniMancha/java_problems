@@ -11,5 +11,6 @@ public class SumOfArrayElementsMain {
 
 		// Call the runningSum method and pass the input array
 		sm.runningSum(nums);
+		sm.runningSumWithOverrideMethod(nums);
 	}
 }
