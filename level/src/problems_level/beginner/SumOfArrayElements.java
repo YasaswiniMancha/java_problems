@@ -37,7 +37,7 @@ public class SumOfArrayElements {
             }
         }
         
-        System.out.println("nums array using OverrideMethod for sum up: ");
+        System.out.println("nums array using Override Method for sum up: ");
         for (int num : nums) {
             System.out.print(num + " "); // Print each number in the array
         }
