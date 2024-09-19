@@ -3,7 +3,7 @@ package problems_level.beginner;
 public class SumOfArrayElements {
 
     // Method to calculate the running sum of an array
-    public int[] runningSum(int[] nums) {
+    public int[] runningSum(int[] nums) { //time complexity: o(n) space comlexity: o(1)
     	
         int[] results = new int[nums.length];
         
@@ -29,7 +29,7 @@ public class SumOfArrayElements {
     
     
 
-    public int[] runningSumWithOverrideMethod(int[] nums) {
+    public int[] runningSumWithOverrideMethod(int[] nums) { //time complexity: o(n) space comlexity: o(1)
         
         for (int i = 0; i < nums.length; i++) {
             if (i != 0) {
