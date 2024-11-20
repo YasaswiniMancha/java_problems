@@ -1,0 +1,103 @@
+Final keyword
+--------------
+The final keyword in java is used to restrict the user. Java final keyword can be used with the following.
+
+1.Variable
+2.Method 
+3.class
+
+i.e, 
+1. final variable-  to stop changing values.once the variable is declared as final then its value can not be changed.
+2. final method- to stop the method overriding. means if you declare your method as final, you can not override that method.
+3. final class-   to prevent inheritance. If you make any class as final, you cannot extend that class.
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+example for final variable:
+ here in the example below, you can see that I have declared the variable speedlimit and 
+initialized it with a value of 90. Now, with the run method's help, when I am trying to change its value, the compiler throws the error.
+
+-------------------------
+class FinalKeyword{
+
+final int speedlimit = 90;
+
+   public void limitChange(){
+        speedLimit=400;
+        System.out.println(speedLimit);
+
+ public static void main(String[] args){
+     
+     FinalKeyword fk= new FinalKeyword();
+     fk.limitChange();
+   
+   }
+    
+   
+ }
+}
+
+
+output: error : cannot assign a value to a final variable speedLimit
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+example for final method:
+ Here you can notice that the run method of the Bike class can not be redefined in its 
+ child class as the run method is declared as final. So the compiler is throwing the error.
+ 
+ -------------------------
+ class Parent{
+   final void run(){
+       System.out.println(" a for apple");
+   }
+ }
+ 
+ class Child extends parent{
+    
+    void run(){
+       System.out.println(" a for ant");
+   }
+ 
+   public static void main(String args[]){
+   
+       Child c= new Child();
+       c.run();
+   
+   }
+ 
+ }
+
+output: error : run() in Child cannot override run() in Parent
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+example for final class:
+ Here you can notice that the run method of the Bike class can not be 
+redefined in its child class as the run method is declared as final. So the compiler is throwing the error.
+
+-------------------------
+final class Parent{
+
+ void run(){
+       System.out.println(" a for apple");
+   }
+ 
+ }
+class Child extends parent{
+    
+    void run(){
+       System.out.println(" a for ant");
+   }
+ 
+   public static void main(String args[]){
+   
+       Child c= new Child();
+       c.run();
+   
+   }
+ 
+ }
+ 
+ 
+output: error : cannot inherit from final Parent
