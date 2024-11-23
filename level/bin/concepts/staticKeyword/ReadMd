@@ -1,0 +1,87 @@
+static keyword is used for memory management and 
+to define members (fields and methods) that belong to the class rather than any specific instance of the class.
+
+
+Uses of static in Java: 
+
+1. static variables: A static variable is shared among all instances of a class. It belongs to the class, not to any individual object.
+2. static methods: A static method belongs to the class and can be called without creating an object. Static methods:
+                   Can access static variables directly.
+                   Cannot directly access non-static variables or methods (require an object reference).
+3. static blocks: Static blocks are used to initialize static variables or execute code that needs to run once when the class is loaded.
+4. static inner classes: Static nested classes can be instantiated without an instance of the outer class.
+
+
+1. What is a static keyword in Java?
+
+Static is a Non-Access Modifier. Static can be applied to variable, method, nested class,  and initialization blocks (static block).
+
+
+2. Why main() method is declared as static?
+
+If our main() method is not declared as static then the JVM has to create an object first and call which causes the problem of having extra memory allocation.
+
+
+3. Can constructors be static in Java?
+
+In general, a static method means that “The Method belongs to the class and not to any particular object” but a constructor is always invoked with respect to an object, so it makes no sense for a constructor to be static.
+
+ 
+4. Can we use this to refer static members?
+
+ Yes, it's possible to access the static variables of a class using this but it's discouraged and as per best practices this should be used on nonstatic reference.
+
+ 
+5. What are all the differences between this and the super keyword?
+
+This refers to the current class object whereas super refers to the superclass object
+Using this we can access all non-static methods and variables. Using super we can access superclass variables and methods from sub-class.
+Using this(); call we can call other constructors in the same class. Using super we can call superclass constructor from sub-class constructor.
+ 
+
+6. What is a final method?
+
+When a method is declared as final, then it is called a final method, The subclass can call the final method of the parent class but cannot override it.
+
+ 
+
+7. Can a main() method be declared final?
+
+Yes, the main() method can be declared as final and cannot be overridden.
+
+ 
+
+8. What is a Static Final variable in Java?
+
+When have declared a variable as static final then the variable becomes a CONSTANT.  Only one copy of the variable exists which cannot be changed by any instance.
+
+
+9. Which is the parent class of all the Exception classes?
+
+Throwable Class
+
+10. How many operand can unary operators take in java?
+
+only 1
+
+11. What is the output of the following Java code?
+
+public class Test {
+
+    int x = 10;
+    public static void main(String args[]) {
+        System.out.print(x);
+    }
+
+    static {
+        System.out.println(x + 10);
+    }
+
+}
+
+error
+
+If we are trying to print the instance variable inside the static block or static method without creating the class instance then
+ it will give a compile-time error. non static variable x cannot be referenced from a static context.
+ 
+12. 

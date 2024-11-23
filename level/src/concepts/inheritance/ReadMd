@@ -1,0 +1,47 @@
+
+Definition:-
+------------
+Inheritance in Java is a key object-oriented programming (OOP) concept that allows a class (called the child class or subclass) 
+to inherit fields and methods from another class (called the parent class or superclass). 
+This promotes code reuse and establishes a hierarchical relationship between classes.
+
+Inheritance is a mechanism in which one object acquires all the properties and behaviors of a parent object. 
+It is an important part of oops
+
+Inheritance provides a way to create a new class from an existing class. 
+The new class is an extended version of the existing class such that 
+it inherits all the non-private fields (variables) and methods of the existing class.
+The existing class is used as a starting point or as a base to create the new class.
+
+
+
+Types of Inheritance:-
+-------------------------
+On the basis of class, there can be three types of inheritance in java: single, multilevel, and hierarchical.
+
+In java programming, multiple and hybrid inheritance is supported through interface only. We will learn about interfaces later.
+
+1. Single : In single inheritance, a class inherits from one and only one parent class. This is the simplest form of inheritance.
+
+   class B -----> class A
+
+2. Multi-level : In multi-level inheritance, a class inherits from a class that itself inherits from another class.
+   This creates a chain of inheritance.
+ 
+   class C ------> class B --------> class A
+
+3. Hierarchical : In hierarchical inheritance, multiple child classes inherit from a single parent class.
+   class B -------> class A <--------- class C
+
+4. Multiple :  class B <--------- class A -----------> class C , 
+   multiple inheritance is not supported by java?
+   To reduce the complexity and simplify the language, multiple inheritance is not supported in java.
+   In multiple inheritance, a class inherits from more than one parent class. Java does not support multiple inheritance 
+   with classes to avoid ambiguity caused by the Diamond Problem. However, Java supports it through interfaces.
+   
+   key: Child inherits from both Parent1 and Parent2.
+   
+5. Hybrid : In hybrid inheritance, a combination of two or more types of inheritance (e.g., single and multiple) is used. 
+   Since Java doesn't support multiple inheritance with classes, hybrid inheritance is implemented using interfaces.
+
+   key:  Child combines features of both Parent1 (interface) and Parent2 (class).

@@ -1,0 +1,33 @@
+
+
+The Is-A Relationship
+---------------------
+wherever we come across an IS-A relationship between objects, we can use inheritance.
+The "is-a" relationship signifies inheritance and indicates that one class is a subtype of another.
+ It represents a generalization-specialization relationship where the subclass inherits from the parent class.
+ 
+Key Concept: A subclass is a specific type of the parent class.
+Implementation: Achieved using the extends keyword in Java.
+ 
+ex:
+ 
+Derived class/child class                  Existing class/ Parent class
+
+java                   is a                 programming language
+car                    is a                 vehicle
+Rose                   is a                 flower
+square                 is a                 shape
+
+The Has-A Relationship
+----------------------
+The "has-a" relationship signifies composition or aggregation and indicates that one class contains a reference to another class. It represents a whole-part relationship where the containing class has one or more instances of another class.
+
+Key Concept: A class contains or owns another class as a part of its design.
+Implementation: Achieved by defining an object of one class as a field in another class.
+
+ex:
+square                has a                corners
+java                  has a                oops
+car                   has a                wheels
+
+
