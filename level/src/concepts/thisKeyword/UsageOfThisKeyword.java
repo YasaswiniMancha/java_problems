@@ -67,11 +67,3 @@ public class UsageOfThisKeyword {
     	 returnObj.func1();
      }
 }
-
-//this keyword refer to 
-//this: current class instance variable
-//this: to invoke the current class method(implicitly)  this can be used to invoke the current class method. 
-//this: to invoke the current class constructor, It is used to reuse the constructor. In other words, it is used for constructor chaining.
-//this: to pass as an argument in the method
-//this keyword can be used to return the current class instance from the method
-

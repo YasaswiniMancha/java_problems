@@ -1,0 +1,5 @@
+
+The super keyword in Java is a reference variable that is used to 
+1. super.yourVariableName refer to the immediate parent class object i.e, to refer the immediate class parent class instance variable
+2. super() method refers to invoke the immediate parent class constructor.
+3. super.yourMethodName() refers to the immediate parent class method.
