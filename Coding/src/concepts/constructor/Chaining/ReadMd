@@ -1,0 +1,14 @@
+Constructor chaining in Java refers to the process of calling one constructor from another constructor within the same class or a parent class. There are two types of constructor chaining:
+
+1. Within the Same Class (this()):
+A constructor in a class can call another constructor of the same class using the this() keyword.
+This is used to reuse constructor logic within the same class and avoid code duplication.
+
+2. Between Parent and Child Class (super()):
+A constructor in a subclass can call a constructor of the parent class using the super() keyword.
+This is used to initialize the parent class's state when creating an instance of the child class.
+
+
+this() must be the first statement in a constructor when used.
+super() must also be the first statement when used in a subclass constructor.
+Both cannot be used together in the same constructor, as they must be the first statement.
