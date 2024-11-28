@@ -1,0 +1,91 @@
+
+Definition:-
+
+Abstraction in Object-Oriented Programming refers to showing only the essential features of an object to the user
+and hiding the inner details to reduce complexity. It can be put this way that the user only has to know “what an object does?” rather than “how it does?”.
+
+uses
+-----
+To reduce complexity by hiding unnecessary details.
+To provide a clear separation between interface (what is exposed) and implementation (how it works).
+Promotes code flexibility and maintainability.
+
+Ex: the users and the admin of an application is a good real-world example of abstraction
+    A user can only use and interact with the limited features of an application 
+    and is unaware of the implementation details or the way the application was developed. 
+    Usually, the users are only concerned with the functionality of an application.
+    An admin can have the access to a lot more features of the application and nothing is hidden from him. 
+    The admin can monitor the activity of the users, knows how the application was developed and can implement new features by deploying them in the application.
+    In the above example, the abstraction is being applied to the user but not to the admin.
+
+ 
+An Example from Java 
+
+In Java, one can very easily see abstraction in action. 
+Let’s take an example of Java Math class. 
+There are a lot of in-built methods in this class that can be used by the programmer to get facilitated. 
+Let’s use a few methods in our code to access the in-built functionality:
+
+ 
+
+class TestAbstraction {
+
+ 
+
+   public static void main( String args[] ) {
+
+ 
+
+          int min = Math.min(15,18);    //find min of two numbers
+
+ 
+
+         double square = Math.pow(2,2); //calculate the power of a number
+
+ 
+
+         System.out.println("The min of 15 & 18 is: "+ min); System.out.println("The square of 2 is: " + square)
+
+ 
+
+        }
+
+}
+
+    
+
+In the above code:
+
+ 
+
+Math.min() find min of two num
+
+Math.max() find max of two num
+
+But the user doesn’t have to know about the implementation of these two methods inside the Math class
+
+ 
+
+Abstract Data Types 
+
+By the definition of abstract data types, the users only get to know the essentials i.e. the functionality of those data types,
+and the ‘how the implementation should be done to achieve the specified functionality?’ part is hidden.
+
+An example of abstract data type can be built in stack class in java in  which the user knows that it has pop push functions 
+but the user doesn’t know how there are implemented
+
+ 
+Rules of abstraction
+----------------------
+1. An abstract class must be declared with an abstract keyword.
+2. It can have abstract and non-abstract keywords.
+3. It cannot be instantiated.
+4. It can have final methods.
+5. It can have constructor and static methods also.
+
+
+Abstraction can be achieved by using 2 ways:
+1. Abstract classes
+2. Interfaces
+
+
