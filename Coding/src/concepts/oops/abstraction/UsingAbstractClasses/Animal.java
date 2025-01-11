@@ -1,4 +1,4 @@
-package concepts.oops.abstraction.UsingAbstractClasses;
+package concepts.oops.abstraction.usingAbstractClasses;
 
 abstract class Animal {
     abstract void makeSound();  // Abstract method

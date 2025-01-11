@@ -1,0 +1,20 @@
+Polymorphism is the ability of an object to take on multiple forms. 
+It allows methods to perform different tasks based on the object that calls them, enabling flexibility and reusability in code.
+
+Types of Polymorphism
+
+Compile-time Polymorphism (Method Overloading)
+----------------------------------------------
+Achieved by defining multiple methods with the same name but different parameters (number, type, or order of arguments).
+Decided at compile-time by the compiler.
+
+Runtime Polymorphism (Method Overriding)
+-----------------------------------------
+Achieved when a subclass provides a specific implementation of a method already defined in its parent class.
+Decided at runtime based on the object's actual type.
+
+
+Key Points:
+Overloading: Same method name, different parameter lists.
+Overriding: Same method signature in a subclass with a different implementation.
+Polymorphism relies on inheritance and method overriding to achieve runtime flexibility.
